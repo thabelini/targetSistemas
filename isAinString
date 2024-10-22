@@ -1,0 +1,9 @@
+def isAinString(string): 
+    result = string.count('a') + string.count('A')
+
+    if result == 0:
+        return("A letra 'a' ou 'A' não aparece nenhuma vez.")
+    elif result == 1:
+        return("A letra 'a' ou 'A' aparece uma vez.")
+    else:
+        return(f"A letra 'a' ou 'A' aparece {result} vezes.")
