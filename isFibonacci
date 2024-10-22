@@ -1,0 +1,16 @@
+def isFibonacci(n):
+    count = 0
+    arr = [0,1]
+    i = 0
+    j = 1
+    
+    while count < n:
+        arr.append(arr[i]+arr[j])
+        i += 1
+        j += 1
+        count += 1
+
+    if n in arr:
+        return("O número pertence à sequência Fibonacci")
+    else:
+        return("O número não pertence à sequência Fibonacci")
